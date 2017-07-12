@@ -6,7 +6,7 @@
           <div class="pic"><a :href="'goodsDetail?goodsid='+item.id"><img :src="item.data.goods_basic_info.goods_pic" width="100%"></a></div>
           <div class="info">
             <p>{{item.data.goods_basic_info.goods_name}}
-            <p><span v-if="item.data.goods_sale_info.sale_type==1">整箱装</span><span v-if="item.data.goods_sale_info.sale_type==2">按瓶卖</span> {{item.data.goods_sale_info.sale_spec}}*{{item.data.goods_sale_info.sale_number}}</p>
+            <p><span v-if="item.data.goods_sale_info.sale_type==1">整箱装</span><span v-if="item.data.goods_sale_info.sale_type==2">按瓶卖</span> {{item.data.goods_sale_info.sale_spec}}ml * {{item.data.goods_sale_info.sale_number}}</p>
             <p class="price"><span @click="order(item.id)"><b>立即下单</b></span>￥{{item.data.goods_sale_info.sale_price}}</p>
           </div>
         </li>

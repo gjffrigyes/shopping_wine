@@ -8,7 +8,7 @@
         <dd>
           <div>
             <p>{{goods.data.goods_basic_info.goods_name}}</p>
-            <p><span v-if="goods.data.goods_sale_info.sale_type==1">整箱装</span><span v-if="goods.data.goods_sale_info.sale_type==2">按瓶卖</span> {{goods.data.goods_sale_info.sale_spec}}*{{goods.data.goods_sale_info.sale_number}}</p>
+            <p><span v-if="goods.data.goods_sale_info.sale_type==1">整箱装</span><span v-if="goods.data.goods_sale_info.sale_type==2">按瓶卖</span> {{goods.data.goods_sale_info.sale_spec}}ml * {{goods.data.goods_sale_info.sale_number}}</p>
             <p class="price"><span>x {{goods.data.buy_num}}</span>￥{{goods.data.goods_sale_info.sale_price}}</p>
           </div>
         </dd>

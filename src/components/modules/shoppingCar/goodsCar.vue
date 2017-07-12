@@ -16,7 +16,7 @@
             <div class="addnum"><span @click="reduce(item.id,index)"><b>-</b></span><span><b>{{item.op_data.shopping_cart_number}}</b></span><span @click="addNum(item.id,index)"><b>+</b></span></div>
             <div class="goodsCarInfo">
               <span class="ljx" @click="deleteNum(item.id,index)"></span>
-              <p>{{item.goods.data.goods_basic_info.goods_brand}}({{item.goods.data.goods_basic_info.goods_name}})</p>
+              <p class="w2">{{item.goods.data.goods_basic_info.goods_brand}}({{item.goods.data.goods_basic_info.goods_name}})</p>
               <p><span v-if="item.goods.data.goods_sale_info.sale_type==1">整箱装</span><span v-if="item.goods.data.goods_sale_info.sale_type==2">按瓶卖</span>{{item.goods.data.goods_sale_info.sale_number}}</p>
               <p class="price">￥{{item.goods.data.goods_sale_info.sale_price}}</p>
             </div>

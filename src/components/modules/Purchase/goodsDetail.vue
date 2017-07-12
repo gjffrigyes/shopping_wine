@@ -36,7 +36,7 @@
           direction: 'horizontal',
           grabCursor: true,
           setWrapperSize: true,
-          autoHeight: 354,
+          autoHeight: 654,
           pagination: '.swiper-pagination',
           paginationClickable: true,
           // prevButton: '.swiper-button-prev',

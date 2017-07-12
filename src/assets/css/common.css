@@ -396,6 +396,9 @@ input.w5{
   color: #a0a0a0;
   width: 100%;
 }
+.myShopCar dl dd p.w2 {
+  width:5rem;
+}
 [data-dpr="2"] .myShopCar dl dd p {
   font-size: 24px;
 }
