@@ -20,7 +20,7 @@
     </div>
     <div class="pr personOrderInfo">
       <div class="stateSpan">
-        <span v-if="num==5">已完成</span><span v-if="num==4">已取消</span><span v-if="num==3">待收货</span><span v-if="num==2">待发货</span>
+        <span v-if="num==5">已完成</span><span v-if="num==4">已取消</span><span v-if="num==3">待收货</span><span v-if="num==2">待发货</span><span v-if="num==1">待付款</span>
       </div>
       <p>订单号：{{deliver.orderItems.id}}</p>
       <p>下单时间：{{deliver.orderItems.created_at | dateFormat}}</p>
@@ -32,6 +32,7 @@
         <button v-if="num==5" @click="changeState(5)">删除订单</button>
         <button v-if="num==3" @click="changeState(3)">确认收货</button>
         <button v-if="num==2" @click="changeState(2)">取消订单</button>
+        <button v-if="num==1" @click="changeState(2)">取消订单</button>
     </div>
   </div>
 </template>

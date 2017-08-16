@@ -11,6 +11,7 @@
       <h4>我的订单</h4>
       <div class="clear"></div>
       <ul>
+        <li @click="deliver(1)"><p></p>待付款</li>
         <li @click="deliver(2)"><p></p>待发货</li>
         <li @click="deliver(3)"><p></p>待收货</li>
         <li @click="deliver(4)"><p></p>已取消</li>
@@ -131,25 +132,32 @@
   .myShopping .myOrder ul li:nth-child(1) p{
     width: 1.24rem;
     height:0.79rem;
-    background: url("../../../assets/images/my-icon01.png")no-repeat center center;
+    background: url("../../../assets/images/my-icon05.png")no-repeat center center;
     background-size: contain;
     overflow: hidden;
   }
   .myShopping .myOrder ul li:nth-child(2) p{
     width: 1.24rem;
     height:0.79rem;
-    background: url("../../../assets/images/my-icon02.png")no-repeat center center;
+    background: url("../../../assets/images/my-icon01.png")no-repeat center center;
     background-size: contain;
     overflow: hidden;
   }
   .myShopping .myOrder ul li:nth-child(3) p{
     width: 1.24rem;
     height:0.79rem;
-    background: url("../../../assets/images/my-icon03.png")no-repeat center center;
+    background: url("../../../assets/images/my-icon02.png")no-repeat center center;
     background-size: contain;
     overflow: hidden;
   }
   .myShopping .myOrder ul li:nth-child(4) p{
+    width: 1.24rem;
+    height:0.79rem;
+    background: url("../../../assets/images/my-icon03.png")no-repeat center center;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .myShopping .myOrder ul li:nth-child(5) p{
     width: 1.24rem;
     height:0.79rem;
     background: url("../../../assets/images/my-icon04.png")no-repeat center center;

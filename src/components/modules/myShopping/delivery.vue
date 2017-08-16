@@ -13,7 +13,7 @@
           </div>
         </dd>
       </dl>
-      <p class="buttondelvery"><button v-if="num >= 4" @click="confirms(item.id,4)">再次下单</button><button v-if="num == 5" @click="confirms(item.id,5)">删除订单</button><button v-if="num == 2" @click="confirms(item.id,2)">取消订单</button><button v-if="num == 3" @click="confirms(item.id,3)">确认收货</button><span>共{{item.goods.length}}件商品</span>
+      <p class="buttondelvery"><button v-if="num == 1" @click="confirms(item.id,1)">取消订单</button><button v-if="num >= 4" @click="confirms(item.id,4)">再次下单</button><button v-if="num == 5" @click="confirms(item.id,5)">删除订单</button><button v-if="num == 2" @click="confirms(item.id,2)">取消订单</button><button v-if="num == 3" @click="confirms(item.id,3)">确认收货</button><span>共{{item.goods.length}}件商品</span>
         总计￥{{item.data.allPrice}}</p>
     </div>
 
@@ -32,7 +32,9 @@
       ...mapGetters(['deliver']),
       state () {
         var state
-        if(this.$route.query.state==2) {
+        if(this.$route.query.state==1) {
+          state ='待付款'
+        }else if(this.$route.query.state==2) {
           state ='待发货'
         }else if(this.$route.query.state==3) {
           state ='待收货'
